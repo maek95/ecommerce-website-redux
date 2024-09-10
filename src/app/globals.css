@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@tailwind components;
+@tailwind utilities;
+
+.cart-title {
+  line-height: 1.33333;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  font-weight: 800;
+}
+
+.list-items {
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.shipping-bar {
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+/* keyframes to control the intermediate steps in a CSS animation sequence...!
+Kinda unnecessary now that we only have a start and finish step, but useful if we wouldve had multiple steps.
+*/
+@keyframes impact {
+  0% {
+    transform: scale(3); /* start at 3 times the size  */
+  }
+  /* 50% { 
+    transform: scale(3); 
+  } */
+  100% {
+    transform: scale(1); /* Scale back to normal size to the nd */
+  }
+}
+
+.animate-impact {
+  animation: impact 0.5s ease-in-out; /* 0.5 seconds animation */
+}
